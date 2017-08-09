@@ -280,6 +280,19 @@ p.gray {
   font-weight: 600;
 }
 
+.banner-box {
+  margin-bottom: 50px;
+}
+
+.banner-box .container {
+  max-width: 1920px;
+}
+
+.banner-box img {
+  display: block;
+  width: 100%;
+}
+
 .iScaleAnimation .iAnimation {
   -webkit-transition: 0.75s;
   transition: 0.75s;
