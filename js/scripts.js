@@ -34,6 +34,22 @@ jQuery(document).ready(function ($) {
         nextText: "&#xe8ec;",
         maxwidth: ""
     });
+    $(".sliderBox-product > div").responsiveSlides({
+        namespace: "slider",
+        auto: false,
+        speed: 800,
+        timeout: 5000,
+        pager: true,
+        nav: true,
+        random: false,
+        pause: true,
+        pager: true,
+        pauseControls: true,
+        manualControls: '.sliderBox-product-pager',
+        prevText: "&#xe8eb;",
+        nextText: "&#xe8ec;",
+        maxwidth: ""
+    });
     // $(".slider a").attr("href","javascript:;");
     $(".slider_nav.prev").addClass("fontIcon icon-angle-left");
     $(".slider_nav.next").addClass("fontIcon icon-angle-right");
@@ -46,6 +62,8 @@ jQuery(document).ready(function ($) {
     // $.when.apply(null, sliderImageLoad).done(function () {
     //     $(".fontIconLoading").remove();
     // });
+
+
 
     // fancy box
 
@@ -98,6 +116,23 @@ jQuery(document).ready(function ($) {
     $('.toast-temp').on('click', function() {
         toast('正在建设中...', 3000, 'top', 'center');
         return false;
+    });
+
+    $(".zoomImage").elevateZoom({
+        gallery: '.gallery',
+        cursor: 'pointer',
+        galleryActiveClass: 'current',
+        constrainType: 'width',
+        zoomWindowOffetx: 10,
+        borderSize: 2,
+        zoomWindowWidth: 416,
+        zoomWindowHeight: 416,
+        zoomWindowFadeIn: 500,
+        zoomWindowFadeOut: 500,
+        lensFadeIn: 500,
+        lensFadeOut: 500,
+        borderColour: '#fff',
+        loadingIcon: 'img/loading.gif'
     });
 
 });
